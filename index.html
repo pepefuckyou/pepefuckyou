@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PEPEFUCKYOU Coin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #f06, #ffba00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #fff;
+    animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+}
+
+.pepe-gif {
+    width: 50px;
+    vertical-align: middle;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.buy-button {
+    background-color: #ff00ff;
+    color: #fff;
+}
+
+.twitter-button {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.telegram-button {
+    background-color: #0088cc;
+    color: #fff;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+  <script>
+    document.querySelector('.buy-button').addEventListener('click', function() {
+    window.location.href = 'https://your-buy-link.com';
+});
+
+document.querySelector('.twitter-button').addEventListener('click', function() {
+    window.location.href = 'https://twitter.com/your-twitter-handle';
+});
+
+document.querySelector('.telegram-button').addEventListener('click', function() {
+    window.location.href = 'https://t.me/your-telegram-link';
+});
+  </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>$PEPEFUCKYOU <img src="https://pepefuckyou.xyz/pepefuckyou.gif" alt="Pepe GIF" class="pepe-gif"></h1>
+        </header>
+        <main>
+            <div class="buttons">
+                <button class="buy-button">Buy $PEPEFUCKYOU</button>
+                <button class="twitter-button"><i class="fab fa-twitter"></i> Twitter</button>
+                <button class="telegram-button"><i class="fab fa-telegram-plane"></i> Telegram</button>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
