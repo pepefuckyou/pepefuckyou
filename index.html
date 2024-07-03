@@ -6,99 +6,147 @@
     <title>$PEPEFUCKYOU Coin</title>
     <meta name="description" content="Discover $PEPEFUCKYOU, the latest Solana meme coin. Join our community, invest, and enjoy the funniest crypto on the market. Stay updated with $PEPEFUCKYOU news and trends.">
     <meta name="keywords" content="Solana meme coin, Cryptocurrency, $PEPEFUCKYOU coin, PEPEFUCKYOU token, Buy $PEPEFUCKYOU, $PEPEFUCKYOU Solana, $PEPEFUCKYOU crypto, $PEPEFUCKYOU community, Crypto memes, Meme coins, $PEPEFUCKYOU market cap, $PEPEFUCKYOU analysis">
-    <link rel="icon" href="pepefuckyou.gif" type="image/gif">
+    <link rel="icon" href="https://pepefuckyou.xyz/pepefuckyou.gif" type="image/gif">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(135deg, #f06, #ffba00);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f06, #ffba00);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
 
-.container {
-    text-align: center;
-}
+        .container {
+            padding: 20px;
+        }
 
-header h1 {
-    font-size: 3em;
-    color: #fff;
-    animation: neon 1.5s infinite alternate;
-}
+        header h1 {
+            font-size: 2.5em;
+            color: #fff;
+            animation: neon 1.5s infinite alternate;
+        }
 
-@keyframes neon {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
-    }
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
-    }
-}
+        header h2 {
+            font-size: 1.5em;
+            color: #fff;
+            margin-top: 10px;
+            font-style: italic;
+        }
 
-.pepe-gif {
-    width: 50px;
-    vertical-align: middle;
-}
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+            }
+        }
 
-.buttons {
-    margin-top: 20px;
-}
+        .pepe-gif {
+            width: 50px;
+            vertical-align: middle;
+        }
 
-button {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+        .buttons {
+            margin-top: 20px;
+        }
 
-.buy-button {
-    background-color: #ff00ff;
-    color: #fff;
-}
+        button {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-.twitter-button {
-    background-color: #1DA1F2;
-    color: #fff;
-}
+        .buy-button {
+            background-color: #ff00ff;
+            color: #fff;
+        }
 
-.telegram-button {
-    background-color: #0088cc;
-    color: #fff;
-}
+        .twitter-button {
+            background-color: #1DA1F2;
+            color: #fff;
+        }
 
-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+        .telegram-button {
+            background-color: #0088cc;
+            color: #fff;
+        }
 
-  </style>
-  <script>
-    document.querySelector('.buy-button').addEventListener('click', function() {
-    alert("Not launched yet!")
-});
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-document.querySelector('.twitter-button').addEventListener('click', function() {
-    window.location.href = 'https://twitter.com/pepefuckyousol';
-});
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
 
-document.querySelector('.telegram-button').addEventListener('click', function() {
-    window.location.href = 'https://t.me/pepefuckyou';
-});
-  </script>
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            button {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            .pepe-gif {
+                width: 30px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.buy-button').addEventListener('click', function() {
+                customAlert("Not launched yet!");
+            });
+
+            document.querySelector('.twitter-button').addEventListener('click', function() {
+                window.location.href = 'https://twitter.com/pepefuckyousol';
+            });
+
+            document.querySelector('.telegram-button').addEventListener('click', function() {
+                window.location.href = 'https://t.me/pepefuckyou';
+            });
+
+            function customAlert(message) {
+                const alertBox = document.createElement('div');
+                alertBox.style.position = 'fixed';
+                alertBox.style.top = '50%';
+                alertBox.style.left = '50%';
+                alertBox.style.transform = 'translate(-50%, -50%)';
+                alertBox.style.padding = '20px';
+                alertBox.style.backgroundColor = '#ff00ff';
+                alertBox.style.color = '#fff';
+                alertBox.style.borderRadius = '10px';
+                alertBox.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
+                alertBox.innerHTML = message;
+                document.body.appendChild(alertBox);
+
+                setTimeout(() => {
+                    alertBox.remove();
+                }, 3000);
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>$PEPEFUCKYOU <img src="https://pepefuckyou.xyz/pepefuckyou.gif" alt="Pepe GIF" class="pepe-gif"></h1>
+            <h2>„I don’t really care about your feelings so keep your opinion for yourself.“</h2>
         </header>
         <main>
             <div class="buttons">
@@ -108,6 +156,5 @@ document.querySelector('.telegram-button').addEventListener('click', function() 
             </div>
         </main>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
